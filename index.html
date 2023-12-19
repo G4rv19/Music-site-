@@ -6,32 +6,38 @@
     <title>Star Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        /* Styling for the body, including background and flex layout */
         body {
-            background: url('https://www.enwallpaper.com/wp-content/uploads/2021/06/d988ab3016eb280e8912cd2c0177d2b7.jpg') center/cover no-repeat fixed;
+            background: url('https://w0.peakpx.com/wallpaper/589/987/HD-wallpaper-japanese-vibes-ideas-in-2022-scenery-japan-aesthetic-anime-scenery.jpg') center/cover no-repeat fixed;
             margin: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            animation: backgroundMove 20s linear infinite;
+            animation: backgroundMoveSeamless 40s linear infinite; /* Background animation */
+            background-size: auto;
         }
 
+        /* Styling for the main image, with max-width, max-height, margin, and border-radius */
         img {
             max-width: 50%;
             max-height: 60%;
             height: auto;
             width: auto;
             margin: 20px;
-            border-radius: 20px;
+            border-radius: 20px; /* Rounded corners */
+            opacity: 0.98;
         }
 
+        /* Styling for the header, with text alignment, padding, and text color */
         header {
             text-align: center;
             padding: 12px;
-            color: #fff; /* Set header text color to white */
+            color: rgba(255, 255, 255, 0.9);
         }
 
+        /* Styling for the navigation bar, with text alignment, position, and background color transition */
         nav {
             text-align: right;
             position: absolute;
@@ -42,23 +48,25 @@
 
         nav a {
             text-decoration: none;
-            color: #fff;
+            color: rgba(255, 255, 255, 0.9);
             padding: 10px 15px;
             margin: 0 10px;
             border-radius: 15px;
-            background-color: #008ce9;
-            transition: background-color 0.3s ease-in-out;
+            background-color: rgba(0, 140, 233, 0.9);
+            transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
         }
 
         nav a:hover {
-            background-color: #1f618d;
+            background-color: rgba(31, 97, 141, 0.9); /* Background color on hover */
         }
 
+        /* Styling for the secondary div, with text alignment and margin-top */
         div {
             text-align: center;
             margin-top: 50px;
         }
 
+        /* Styling for links in the secondary div, with text decoration, color, font weight, and background color transition */
         div a {
             text-decoration: none;
             color: #333;
@@ -66,26 +74,43 @@
             padding: 10px 15px;
             margin: 0 10px;
             border-radius: 15px;
-            background-color: #f1c40f;
-            transition: background-color 0.3s ease-in-out;
+            background-color: rgba(241, 196, 15, 0.9);
+            transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
         }
 
         div a:hover {
-            background-color: #f39c12;
+            background-color: rgba(243, 156, 18, 0.9); /* Background color on hover */
+        }
+
+        /* Background animation keyframes */
+        @keyframes backgroundMoveSeamless {
+            0% {
+                background-position: 0 100%;
+            }
+            100% {
+                background-position: 0 0;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Header section with a welcome message -->
     <header>
         <h1><i class="fas fa-star"> Welcome </i></h1>
     </header>
+
+    <!-- Navigation bar with a single link -->
     <nav>
         <a href="/about">about</a>
     </nav>
+
+    <!-- Secondary div with login and signup links -->
     <div>
         <a href="/login">Log in</a>
         <a href="/signup">Sign up</a>
     </div>
-    <img src="https://w0.peakpx.com/wallpaper/589/987/HD-wallpaper-japanese-vibes-ideas-in-2022-scenery-japan-aesthetic-anime-scenery.jpg" alt="Japanese Scenery">
+
+    <!-- Main image with a Japanese scenery -->
+    <img src="https://www.enwallpaper.com/wp-content/uploads/2021/06/d988ab3016eb280e8912cd2c0177d2b7.jpg" alt="Japanese Scenery">
 </body>
 </html>
