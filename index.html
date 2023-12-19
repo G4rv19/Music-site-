@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>star</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            background-color: #d2aefd;
+            background: url('https://www.enwallpaper.com/wp-content/uploads/2021/06/d988ab3016eb280e8912cd2c0177d2b7.jpg') center/cover no-repeat fixed;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            animation: backgroundMove 20s linear infinite;
+        }
+
+        img {
+            max-width: 50%;
+            max-height: 60%;
+            height: auto;
+            width: auto;
+            margin: 20px;
+            border-radius: 20px;
         }
 
         header {
             text-align: center;
             padding: 12px;
-        }
-
-        header h1 {
-            display: inline;
-        }
-
-        header i {
-            margin-left: 10px;
+            color: #fff; /* Set header text color to white */
         }
 
         nav {
@@ -76,5 +86,6 @@
         <a href="/login">Log in</a>
         <a href="/signup">Sign up</a>
     </div>
+    <img src="https://w0.peakpx.com/wallpaper/589/987/HD-wallpaper-japanese-vibes-ideas-in-2022-scenery-japan-aesthetic-anime-scenery.jpg" alt="Japanese Scenery">
 </body>
 </html>
