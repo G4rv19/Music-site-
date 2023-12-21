@@ -48,11 +48,12 @@
             margin: 0 10px;
             border-radius: 15px;
             background-color: #fff;
-            transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+            transition: fadeOutBorderButton 0.6s backwards; /* Smooth background color transition */
         }
 
         nav a:hover {
-            background-color: rgba(31, 97, 141, 0.9); /* Background color on hover */
+            animation: fadeInBorderButton 0.6s forwards;
+            cursor: auto;
         }
 
         /* Styling for the secondary div, with text alignment and margin-top */
