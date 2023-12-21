@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Star Website</title>
+    <!-- Add the link to Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
 
@@ -22,23 +23,13 @@
             min-height: 100vh;
             animation: backgroundMoveSeamless 40s linear infinite; /* Background animation */
         }
-
-        /* Styling for the main image, with max-width, max-height, margin, and border-radius */
-        img {
-            max-width: 50%;
-            max-height: 60%;
-            height: auto;
-            width: auto;
-            margin: 20px;
-            border-radius: 20px; /* Rounded corners */
-            opacity: 0.98;
-        }
-
         /* Styling for the header, with text alignment, padding, and text color */
         header {
             text-align: center;
             padding: 12px;
             color: rgba(255, 255, 255, 0.9);
+            font-weight: bolder;
+            font-family: 'Quicksand', sans-serif;
         }
 
         /* Styling for the navigation bar, with text alignment, position, and background color transition */
@@ -52,11 +43,11 @@
 
         nav a {
             text-decoration: none;
-            color: rgba(255, 255, 255, 0.9);
+            color: #333;
             padding: 10px 15px;
             margin: 0 10px;
             border-radius: 15px;
-            background-color: rgba(0, 140, 233, 0.9);
+            background-color: #fff;
             transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
         }
 
@@ -67,7 +58,7 @@
         /* Styling for the secondary div, with text alignment and margin-top */
         div {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 60px;
         }
 
         /* Styling for links in the secondary div, with text decoration, color, font weight, and background color transition */
@@ -102,9 +93,9 @@
             font-size: 2.8rem;
         }
         #welcome {
-            font-family: Montserrat, sans-serif;
+            font-family: 'Quicksand', sans-serif;
             color: #fff;
-            font-size: 3rem;
+            font-size: 2.8rem;
         }
 
         /* Background animation keyframes */
@@ -139,7 +130,9 @@
 <body>
     <!-- Header section with a welcome message -->
     <header class="welcomeID">
-        <h1><i class="fas fa-star" id="star"></i><i id="welcome">Welcome</i></h1>
+        <a href="http://127.0.0.1:5000/home" style="text-decoration: none; color: inherit;">
+            <h1 id="welcome"><i class="fas fa-star" id="star"></i>Welcome</h1>
+        </a>
     </header>
 
     <!-- Navigation bar with a single link -->
@@ -152,8 +145,5 @@
         <a href="/login">Log in</a>
         <a href="/signup">Sign up</a>
     </div>
-
-    <!-- Main image with a Japanese scenery -->
-    <img src="https://www.enwallpaper.com/wp-content/uploads/2021/06/d988ab3016eb280e8912cd2c0177d2b7.jpg" alt="Japanese Scenery">
 </body>
 </html>
